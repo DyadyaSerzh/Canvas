@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OdintsovS CanpasPaint</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 300px;
+            position: relative;
+            border: 1px solid black;
+        }
+        
+        canvas {
+            background-color: transparent;
+            position: absolute;
+        }
+        
+        .d-none {
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    </div>
+    </canvas>
+    <button id='undo'>UNDO</button>
+    <button id='redo'>REDO</button>
+    <form>
+        <input type="range" id="thickness" name="pencilThick" value="3">
+        <input type="color" id="color" value="black">
+    </form>
+    <script src="canvas.js"></script>
+</body>
+
+</html>
